@@ -43,7 +43,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+    setLoading(true);
     const { email, password } = values;
     try {
       const { data } = await axios.post(loginAPI, {
