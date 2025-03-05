@@ -169,7 +169,7 @@ const Home = () => {
   }, [refresh, frequency, endDate, type, startDate]);
 
   const handleTableClick = (e) => {
-    setView("table");
+    setView("table")
   };
 
   const handleChartClick = (e) => {
